@@ -1,69 +1,140 @@
-/* Grundlegende Stile */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+/* Grundlegendes Reset & Fonts */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     color: #333;
-    max-width: 1200px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem 0;
 }
 
-/* Header (Name und Foto) */
+/* Header */
 header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
     text-align: center;
-    margin-bottom: 30px;
 }
 
-header img {
-    border-radius: 50%;
-    border: 3px solid #1a73e8;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-/* Navigation */
-nav {
-    background-color: #1a73e8;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 30px;
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #3498db;
 }
 
-/* Hauptinhalt (Abschnitte) */
-section {
-    margin-bottom: 40px;
+/* Section Styling */
+.section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    color: #1a73e8;
-    border-bottom: 2px solid #1a73e8;
-    padding-bottom: 5px;
+.section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+}
+
+/* Profilbild */
+.profile-image {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.profile-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tech Stack Liste */
+.tech-list {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.tech-list li {
+    margin-bottom: 0.8rem;
+}
+
+/* Kontaktbereich */
+.contact-methods {
+    margin: 1.5rem 0;
+}
+
+.contact-methods p {
+    margin: 0.5rem 0;
+}
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.social-links a {
+    color: #2c3e50;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #3498db;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-    color: #666;
+    padding: 1.5rem;
+    background-color: #2c3e50;
+    color: white;
 }
 
-/* Responsive Design (für Handys) */
+/* Responsive Design */
 @media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
     nav a {
-        display: block;
-        margin: 5px 0;
+        margin: 0;
+    }
+
+    .container {
+        width: 95%;
+        padding: 1rem 0;
     }
 }
