@@ -215,3 +215,52 @@ li {
         font-size: 1.8rem;
     }
 }
+/* ===== Hero Section Upgrade ===== */
+.hero {
+    margin-top: 60px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 520px;
+}
+
+.hero-text p {
+    font-size: 1.05rem;
+}
+
+.hero-image {
+    flex: 0 0 240px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.hero-image img:hover {
+    filter: grayscale(0%);
+}
+
+/* subtle academic underline */
+.hero-text h1 {
+    position: relative;
+}
+
+.hero-text h1::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #0b3d91;
+    margin-top: 10px;
+}
