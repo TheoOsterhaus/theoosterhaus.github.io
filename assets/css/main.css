@@ -148,6 +148,32 @@ li {
     border-radius: 6px;
 }
 
+/* Social / Contact Icons */
+.nav-social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: 28px; /* konsistent zum Abstand der nav-links */
+}
+
+.nav-social a {
+    color: #444;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.nav-social a:hover {
+    color: #0b3d91;
+}
+
+@media (max-width: 700px) {
+    .nav-social {
+        margin-left: 12px;
+        gap: 12px;
+    }
+}
+
 /* ===== Footer ===== */
 .footer {
     margin-top: 80px;
